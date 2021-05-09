@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style3.css">
+	<link rel="stylesheet" type="text/css" href="../PC_Parts/resources/css/queries.css">
+	<link rel="stylesheet" type="text/css" href="../Vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="../Products/Vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../Products/Vendors/css/Grid.css">
+	<title>Sparrowz-Computers</title>
+</head>
+<body>
+	<header class="about-us">
+		<nav> 
+            <div class="row">
+                <a href="../index.html"><i class="ion-home"></i></a>
+                <a href="index.html"><img src="../Resources/Images/logo_free-file.png" alt="logo" class="logo"></a>
+                   
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#">My Cart</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Sign Up&#92;Login</a></li>
+                    <li><a href="#">Customer Support</a></li>
+
+                </ul>
+                <a class="mob-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+            </div>
+        </nav>
+        <div class="content">
+        	<h1>About Us</h1>
+        	<br>
+			<p><strong> Sparrowz Computers </strong> is a hub established in year 2012 where variety of Computer parts and Accessories are sold. Our Showroom is located at : <strong>Haldwani Uttarakhand - India <br> </strong>. We deliver our products throughout the country at affordable prices and we provide our best services to out customers.</p>   
+			<br><br><br>
+
+			<h2 id="colorr" style="color:rgb(206,0,0);">Thanks For Visiting Us.</h2>     	
+        </div>
+    </header>
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="../Under_Construction/underconstruction.html">Blog</a></li>
+                    <li><a href="../Under_Construction/underconstruction.html">Media</a></li>
+                    <li><a href="../Contact_us/contactus.html">Contact-us</a></li>
+                    <li><a href="https://www.gmail.com">sparrowzcomputers@gmail.com</a></li>
+
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com"><i class="ion-social-facebook"></i></a></li>
+
+                    <li><a href="https://www.twitter.com"><i class="ion-social-twitter"></i></a></li>
+
+                    <li><a href="https://www.youtube.com"><i class="ion-social-youtube"></i></a></li>
+
+                    <li><a href="https://www.instagram.com"><i class="ion-social-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>Copyright &copy; 2022 by Sparrowz-Computers. All Rights Reserved.</p>
+        </div>
+        </footer>
+        <script>
+            var colors = ["color:rgb(255,0,255);", "color:rgb(255,255,0);", "color:rgb(51,102,255);", "color:rgb(0,255,255);","color:rgb(0,255,0);","color:rgb(255,255,255);","color:rgb(206,0,0);"];
+            var i = 0;
+
+            function colorss() {
+                document.getElementById("colorr").style = colors[i];
+                if (i < (colors.length - 1)) //0<no of colors
+                {
+                    i++;
+                } else {
+                    i = 0;
+                }
+            }
+            setInterval(colorss, 200)
+        </script>
+        <script src="../vendors/js/jquerymin.js"></script>
+    <script src="../vendors/js/jquery.waypoints.min.js"></script>
+    <script src="../Products/Resources/js/script1.js"></script>
+</body>
+</html>

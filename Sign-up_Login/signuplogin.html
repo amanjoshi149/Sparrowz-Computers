@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="../PC_Parts/resources/css/queries.css">
+	<link rel="stylesheet" type="text/css" href="../Vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="../Products/Vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../Products/Vendors/css/Grid.css">
+	<title>Sparrowz-Computers</title>
+</head>
+<body>
+	<header class="about-us">
+		<nav> 
+            <div class="row">
+                <a href="../index.html"><i class="ion-home"></i></a>
+                <a href="index.html"><img src="../Resources/Images/logo_free-file.png" alt="logo" class="logo"></a>
+                   
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#">My Cart</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">products</a></li>
+                </ul>
+                <a class="mob-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+            </div>
+        </nav>
+        <div class="imagge col span-1-of-2 ">
+            <img src="../Resources/Images/kyle-williamson-cgou7qYvk6U-unsplash1.jpg" alt="side-image" class="side-image">
+        </div>
+    </header>
+    <div class="signuplogin">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="form-container" id="colorr">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="signup()">Sign-Up</span>
+                            <hr id="indicator">
+                        </div>
+                        <form id="login-form">
+                            <input type="text" name="username" placeholder="Username" required>
+                            <input type="password" name="password" placeholder="Password" required>
+                            <button type="submit" class="btn buttn buttn-full">Login</button>
+                            <a href="#">Forgot Password ?</a>
+                        </form>
+                        <form id="signup-form">
+                            <input type="text" name="username" placeholder="Username" required>
+                            <input type="email" name="Email" placeholder="E-mail ID" required>
+                            <input type="number" name="number" placeholder="Phone Number" required>
+                            <input type="password" name="password" placeholder="Set Password" required>
+                            <button type="submit" class="btn buttn buttn-full">Sign-Up</button>
+                            <a href="#">Forgot Password ?</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="../Under_Construction/underconstruction.html">Blog</a></li>
+                    <li><a href="../Under_Construction/underconstruction.html">Media</a></li>
+                    <li><a href="../Contact_us/contactus.html">Contact-us</a></li>
+                    <li><a href="https://www.gmail.com">sparrowzcomputers@gmail.com</a></li>
+
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com"><i class="ion-social-facebook"></i></a></li>
+
+                    <li><a href="https://www.twitter.com"><i class="ion-social-twitter"></i></a></li>
+
+                    <li><a href="https://www.youtube.com"><i class="ion-social-youtube"></i></a></li>
+
+                    <li><a href="https://www.instagram.com"><i class="ion-social-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>Copyright &copy; 2022 by Sparrowz-Computers. All Rights Reserved.</p>
+        </div>
+        </footer>
+        <script>
+            var colors = ["border: solid 2px rgb(255,0,255);", "border: solid 2px rgb(255,255,0);", "border: solid 2px rgb(51,102,255);", "border: solid 2px rgb(0,255,255);","border: solid 2px rgb(0,255,0);","border: solid 2px rgb(255,153,0);","border: solid 2px rgb(206, 0, 0);"];
+            var i = 0;
+
+            function colorss() {
+                document.getElementById("colorr").style = colors[i];
+                if (i < (colors.length - 1)) //0<no of colors
+                {
+                    i++;
+                } else {
+                    i = 0;
+                }
+            }
+            setInterval(colorss, 200)
+
+            var login_form = document.getElementById("login-form");
+            var signup_form = document.getElementById("signup-form");
+            var indicator = document.getElementById("indicator");
+
+            function signup() {
+                signup_form.style.transform= "translateX(0px)";
+                login_form.style.transform= "translateX(0px)";
+                indicator.style.transform= "translateX(100px)";
+            }
+
+            function login() {
+                signup_form.style.transform= "translateX(300px)";
+                login_form.style.transform= "translateX(300px)";
+                indicator.style.transform= "translateX(0px)";
+            }
+        </script>
+        <script src="../vendors/js/jquerymin.js"></script>
+    <script src="../vendors/js/jquery.waypoints.min.js"></script>
+    <script src="../Products/Resources/js/script1.js"></script>
+</body>
+</html>

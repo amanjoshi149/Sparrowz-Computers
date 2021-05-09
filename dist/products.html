@@ -1,0 +1,59 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="Products/Vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="Products/Vendors/css/Grid.css">
+        <link rel="stylesheet" type="text/css" href="Products/Resources/css/style1.css">
+        <title>Sparrowz-Computers</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <a href="index.html"><i class="ion-arrow-left-c"></i></a>
+                    <img src="Resources/Images/logo_free-file.png" alt="logo" class="logo">
+                    <ul class="main-nav">
+                        <li><a href="#">My Cart</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Sign Up&#92;Login</a></li>
+                        <li><a href="#">Customer Support</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+            <div class="text-box">
+                <h1>Buy Best in Class Components Today for your PC &#33;</h1>
+                <img src="Resources/Images/kyle-williamson-cgou7qYvk6U-unsplash.jpg" alt="img1" id="slide-image">
+            </div>
+        </header>
+        <section class="products">
+            <ul class="products-showcase">
+                <li>
+                    <figure>
+                        <a><img src="Resources/" </a>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        <script>
+            var images = ["Resources/Images/kyle-williamson-cgou7qYvk6U-unsplash.jpg", "Resources/Images/anas-alshanti-feXpdV001o4-unsplash.jpg", "Resources/Images/christian-wiediger-u03OCRlSd2M-unsplash.jpg", "Resources/Images/rohit-choudhari-tk2_RBZq7RA-unsplash.jpg"];
+            var i = 0;
+
+            function slides() {
+                document.getElementById("slide-image").src = images[i];
+                if (i < (images.length - 1)) //0<4
+                {
+                    i++;
+                } else {
+                    i = 0;
+                }
+            }
+            setInterval(slides, 2000)
+        </script>
+    </body>
+
+    </html>

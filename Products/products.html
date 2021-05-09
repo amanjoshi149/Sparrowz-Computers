@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../Vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="../Products/Vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../Products/Vendors/css/Grid.css">
+        <link rel="stylesheet" type="text/css" href="../Products/Resources/css/style1.css">
+        <title>Sparrowz-Computers</title>
+    </head>
+
+    <body>
+        <header>
+            <nav> 
+                <div class="row">
+                    <a href="../index.html"><i class="ion-arrow-left-c"></i></a>
+                    <a href="../index.html"><img src="../Resources/Images/logo_free-file.png" alt="logo" class="logo"></a>
+                    <a href="../index.html"><img src="../Resources/Images/logo_free-file-next.png" alt="logo-white" class="logo-white"></a>
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#">My Cart</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Sign Up&#92;Login</a></li>
+                        <li><a href="#">Customer Support</a></li>
+
+                    </ul>
+                    <a class="mob-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
+            <div class="text-box">
+                <h1>Buy Best in Class Components Today for your PC &#33;</h1>
+                <img src="../Resources/Images/kyle-williamson-cgou7qYvk6U-unsplash.jpg" alt="img1" id="slide-image">
+            </div>
+        </header>
+        <section class="products js--products wp">
+            <ul class="products-showcase col">
+                <li>
+                    <figure class="product-photo">
+                        <h3>PC Components</h3>
+                        <p>(click On the below image to go to the COMPONENTS LIST !)</p>
+                        <a href="../PC_Parts/pcparts.html"><img src="../Resources/Images/christian-wiediger-u03OCRlSd2M-unsplash.jpg" alt="PC-Parts"></a>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="product-photo">
+                        <h3>Accessories</h3>
+                        <p>(click On the below image to go to the ACCESSORIES LIST !)</p>
+                        <a href="../Accessories/accessories.html"><img src="../Resources/Images/fredrick-tendong-6ou8gWpS9ns-unsplash.jpg" alt="PC-Accessories"></a>
+                     </figure>
+                </li>
+            </ul>
+        </section>
+        <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="../About_us/aboutus.html">About us</a></li>
+                    <li><a href="../Under_Construction/underconstruction.html">Blog</a></li>
+                    <li><a href="../Under_Construction/underconstruction.html">Media</a></li>
+                    <li><a href="../Contact_us/contactus.html">Contact-us</a></li>
+                    <li><a href="https://www.gmail.com">sparrowzcomputers@gmail.com</a></li>
+
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com"><i class="ion-social-facebook"></i></a></li>
+
+                    <li><a href="https://www.twitter.com"><i class="ion-social-twitter"></i></a></li>
+
+                    <li><a href="https://www.youtube.com"><i class="ion-social-youtube"></i></a></li>
+
+                    <li><a href="https://www.instagram.com"><i class="ion-social-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>Copyright &copy; 2022 by Sparrowz-Computers. All Rights Reserved.</p>
+        </div>
+        </footer>
+        <script>
+            var images = ["../Resources/Images/kyle-williamson-cgou7qYvk6U-unsplash.jpg", "../Resources/Images/anas-alshanti-feXpdV001o4-unsplash.jpg", "../Resources/Images/joseph-greve-D_1-g2eLho8-unsplash.jpg", "../Resources/Images/rohit-choudhari-tk2_RBZq7RA-unsplash.jpg","../Resources/Images/timothy-dykes-81TdYe3YGaA-unsplash.jpg","../Resources/Images/nana-dua-aVeKubCF-48-unsplash.jpg"];
+            var i = 0;
+
+            function slides() {
+                document.getElementById("slide-image").src = images[i];
+                if (i < (images.length - 1)) //0<no of slides
+                {
+                    i++;
+                } else {
+                    i = 0;
+                }
+            }
+            setInterval(slides, 2000)
+        </script>
+    <script src="../vendors/js/jquerymin.js"></script>
+    <script src="../vendors/js/jquery.waypoints.min.js"></script>
+    <script src="../Products/Resources/js/script1.js"></script>
+    </body>
+</html>

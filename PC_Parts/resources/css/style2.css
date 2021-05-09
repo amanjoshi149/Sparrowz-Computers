@@ -1,0 +1,305 @@
+/*-------------------------------------
+            Basics               
+------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif, 'Lato', 'Arial';
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*-------------------------------------
+            Header-Section               
+------------------------------------- */
+
+header{
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    margin: 0;
+    margin-left: -40px;
+    margin-top: 40px;
+    font-size: 225%;
+    text-transform: uppercase;
+    font-weight: lighter; 
+    word-spacing: 7px;
+}
+h1:after {
+    display: block;
+    height: 2px;
+    background-color:rgb(206, 0, 0); 
+    content: " ";
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.logo{
+    float: right;
+    height: 55px;
+    width: auto;
+    margin-top: 15px;
+    margin-left: 50%;
+    margin-right: -150px;
+    
+}
+
+.ion-arrow-left-c{
+    color: rgb(206,0,0);
+    font-size: 230%;
+    float: left;
+    margin-top: 15px;
+    margin-left: -12%;
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: -45px;
+    margin-left: 5%;
+    margin-right: 40px;
+}
+
+/*-------------------------------------
+            Navigations               
+------------------------------------- */
+.main-nav li{
+    display: inline-block;
+    margin-left: 50px;
+}
+.main-nav li:last-child{
+    margin-right: -60px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.5s;
+    transition: border-bottom 0.5s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid rgb(206,0,0);
+}
+.logo-white {
+    display: none;
+}
+.logo-white{
+    height: 50px;
+    width: 40px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 110%;
+}
+
+/*-------------------------------------
+            Sticky Navigation               
+------------------------------------- */
+.sticky{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color:rgb(206, 0, 0);  
+    z-index: 9999;
+}
+.sticky .logo{
+    display: none;
+}
+.sticky .logo-white{
+    display: block;
+}
+
+.sticky .ion-arrow-left-c{
+    color: #fff;
+}
+.sticky li a:link,
+.sticky li a:visited{
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.5s;
+    transition: border-bottom 0.5s;
+}
+
+.sticky li a:hover,
+.sticky li a:active{
+    border-bottom: 2px solid #fff;
+}
+
+/*-------------------------------------
+         Mobile navigation
+--------------------------------------*/
+
+.mob-nav-icon{
+    float: right;
+    margin-top: 3px;
+    cursor: pointer;
+    display: none;
+}
+
+.mob-nav-icon i{
+    font-size: 200%;
+    color: rgb(206, 0, 0);
+}
+
+/*---------------------------------
+            Main-Heading
+ ---------------------------------*/
+.headingg{
+    text-align: center;
+    margin-top: 5%;
+}
+
+/*---------------------------------
+            List of Items
+ ---------------------------------*/
+
+.photoss{
+    list-style: none;
+    width: 100%;
+}
+
+.photoss li{
+    padding-top: 10px;
+    display: block;
+    float: left;
+    width: 25%;
+}
+.photoss li a:link,
+.photoss li a:visited{
+    text-decoration: none;
+}
+.photoss li:last-child{padding-bottom: 10px;}
+
+.item-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.item-photo figcaption{
+    color: rgb(206,0,0);
+    font-size: 115%;
+    z-index: -1;
+}
+.item-photo img{
+    border-radius: 20px;
+    filter: brightness(80%);
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.item-photo img:hover {
+    filter: brightness(110%);
+    transform: scale(0.9);
+}
+/*---------------------------------
+            Footer
+ ---------------------------------*/
+
+footer {
+    background-color: #000;
+    padding-bottom: 10px; 
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+    font-size: 80%;
+    margin-left: -25%;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: rgb(206, 0, 0);
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 150%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-youtube,
+.ion-social-instagram{
+    -webkit-transition: color 0.5s;
+    transition:color 0.5s;
+}
+
+.ion-social-facebook:hover{
+    color: #3b5998;
+}
+.ion-social-twitter:hover{
+    color:#00aced
+}
+.ion-social-youtube:hover{
+    color: #bb0000;
+}
+.ion-social-instagram:hover{
+    color: #517fa4;
+}
+
+footer p {
+    color: rgb(206, 0, 0);
+    text-align: center;
+    font-size: 80%;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}

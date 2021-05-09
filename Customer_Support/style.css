@@ -1,0 +1,290 @@
+
+/*-------------------------------------
+            Basics               
+------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif, 'Lato', 'Arial';
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/*-------------------------------------
+            Header-Section               
+------------------------------------- */
+
+header{
+    height: 83vh;
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    margin-top: 40px;
+    font-size: 225%;
+    font-weight: lighter; 
+    word-spacing: 7px;
+}
+
+.logo{
+    float: right;
+    height: 55px;
+    width: auto;
+    margin-top: 15px;
+    margin-left: 50%;
+    margin-right: -150px;
+    
+}
+
+.ion-help-circled{
+    color: rgb(206,0,0);
+    font-size: 230%;
+    float: left;
+    margin-left: 10%;
+    margin-right: 0;
+
+}
+.ion-home{
+    color: rgb(206,0,0);
+    font-size: 230%;
+    float: left;
+    margin-top: 15px;
+    margin-left: -12%;
+}
+
+.content{
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.content h1{
+    margin-top: 8%;
+}
+
+.content p{
+    word-spacing: 4px;
+    letter-spacing: 2px;
+}
+
+.contentt{
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.contentt h1{
+    margin-top: 8%;
+}
+
+.contentt p{
+    word-spacing: 4px;
+    letter-spacing: 2px;
+}
+
+strong{
+    color: rgb(206, 0, 0);
+}
+
+h2 {
+    margin-top: 2.5%;
+    font-size: 120%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 7px;
+}
+
+
+.content {
+    font-size: 120%;
+}
+.contentt {
+    font-size: 120%;
+}
+.buttn{
+    margin-top: 0%;
+}
+.buttn:link,
+.buttn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none; 
+    border-radius: 200px;
+    color: #fff;
+    -webkit-transition: background-color 0.5s, border 0.5s, color 0.5s;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+
+.buttn-full:link,
+.buttn-full:visited{
+    border: 1px solid rgb(206, 0, 0);
+    color: rgb(206, 0, 0);
+    margin-right: 15px;
+}
+
+.buttn:hover,
+.buttn:active{
+    background-color: rgb(167, 0, 0);
+    color: rgb(253, 232, 232);
+}
+
+
+/*-------------------------------------
+         Mobile navigation
+--------------------------------------*/
+
+.mob-nav-icon{
+    float: right;
+    margin-top: 3px;
+    cursor: pointer;
+    display: none;
+}
+
+.mob-nav-icon i{
+    font-size: 200%;
+    color: rgb(206, 0, 0);
+}
+
+/*---------------------------------
+            Footer
+ ---------------------------------*/
+
+footer {
+    background-color: #000;
+    padding-bottom: 10px; 
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+    font-size: 80%;
+    margin-left: -25%;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: rgb(206, 0, 0);
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 150%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-youtube,
+.ion-social-instagram{
+    -webkit-transition: color 0.5s;
+    transition:color 0.5s;
+}
+
+.ion-social-facebook:hover{
+    color: #3b5998;
+}
+.ion-social-twitter:hover{
+    color:#00aced
+}
+.ion-social-youtube:hover{
+    color: #bb0000;
+}
+.ion-social-instagram:hover{
+    color: #517fa4;
+}
+
+footer p {
+    color: rgb(206, 0, 0);
+    text-align: center;
+    font-size: 80%;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+
+/*-------------------------------------
+            Navigations               
+------------------------------------- */
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-left: 20%;
+    margin-top: -3%;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.5s;
+    transition: border-bottom 0.5s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid rgb(206,0,0);
+}
+.logo-white {
+    display: none;
+}
+.logo-white{
+    height: 50px;
+    width: 40px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 110%;
+}
